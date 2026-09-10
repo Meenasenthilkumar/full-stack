@@ -1,0 +1,48 @@
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: ball;
+    animation-duration: 3s;
+    position: relative;
+}
+.box1{
+    animation-timing-function: linear;
+}
+.box2{
+    animation-timing-function: ease-in;
+    background-color: pink;
+}
+.box3{
+    animation-timing-function: ease-out;
+    background-color: burlywood;
+}
+.box4{
+    animation-timing-function: ease-in-out;
+    background-color: blueviolet;
+}
+
+@keyframes ball{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 50%;
+        top: 400px;
+    }
+    100%{
+        left: 90%;
+        top: 0px;
+    }
+}
+@media (max-width:768px){ 
+  div{
+    width: 80px;
+  }
+
+}
+
+@media(max-width:480px){ 
+
+}
